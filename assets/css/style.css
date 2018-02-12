@@ -12,22 +12,25 @@ body{
 
 }
 
-.header{
-
-    max-width: 960px;
-
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 0 0px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
 }
+
 .wrapper{
-    border-top: solid 4px gray;
+    padding-top: 100px;
     background-image: url('../images/texture.png');
     background-repeat: repeat;
     margin: 0;
     height: 100%;
-    padding-bottom: 150px 
+    padding-bottom: 80px 
 
 
 
@@ -44,7 +47,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     background-color: #4aaaa5;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     margin: 0; 
     display: block;
@@ -59,7 +62,10 @@ body{
     font-size: 18px;
     color: gray;
     list-style-type: none;
-    padding-top: 10px;
+    padding-top: 25px;
+    vertical-align: middle;
+
+    
 }
 
 .menu li  {
@@ -87,7 +93,14 @@ body{
 }
 .container {
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
+}
+.containerhead{
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 960px;
+    box-sizing: border-box;
+
 
 }
 .Abouttext {
@@ -142,11 +155,10 @@ footer {
     width: 100%;
     text-align: center;
     border-top: solid 2px #4aaaa5;
-    padding: 0px;
+    padding: 10px;
     margin: 0 auto;
     box-sizing: border-box;
-    position: fixed;
-    bottom: 0px;
+
 }
 
 
@@ -229,13 +241,18 @@ footer {
    
       }
 
+      .header {
+        width: 100%;
+        position: absolute;
+    }
+    .wrapper {
+        padding-top: 120px;
+    }
+
   }
-  @media screen and (max-width: 381px) {
+  @media screen and (max-width: 300px) {
     .menu ul {
         font-size: 12px;
-    }
-    #logo {
-        font-size: 25px;
     }
 }
 input[type=text] {
@@ -294,6 +311,6 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 100%;
     margin: 0 auto;
 }
-.portfoliolink:hover{
+.portfoliolink:hover {
     background-color:gray;
 }
